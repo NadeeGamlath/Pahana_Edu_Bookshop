@@ -67,6 +67,7 @@
             <a href="add_item.jsp" target="contentFrame" class="nav-link">Add Item</a>
             <a href="view_item_wrapper.jsp" target="contentFrame" class="nav-link">View Items</a>
             <a href="billing.jsp" target="contentFrame" class="nav-link">Billing</a>
+            <a href="help_section.jsp" target="contentFrame" class="nav-link">Help</a>
             <a href="logout.jsp" target="contentFrame" class="nav-link">Logout</a>
         </div>
     </div>
