@@ -133,4 +133,18 @@ public class ItemDao {
 
         return items;
     }
+    public void reduceStock(String itemId, int qty) {
+        String sql = "UPDATE items SET quantity = quantity - ? WHERE item_id = ? AND quantity >= ?";
+        try (
+            Connection conn = getConnection();
+            PreparedStatement ps = conn.prepareStatement(sql)
+        ) {
+            ps.setInt(1, qty);
+            ps.setString(2, itemId);
+            ps.setInt(3, qty);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
