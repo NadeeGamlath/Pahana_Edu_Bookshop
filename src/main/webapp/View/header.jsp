@@ -62,6 +62,7 @@
         </div>
         <hr>
         <div>
+        	<a href="dashboard.jsp" target="contentFrame" class="nav-link">Dashboard</a>
             <a href="add_customer.jsp" target="contentFrame" class="nav-link">Add Customer</a>
             <a href="view_customer_wrapper.jsp" target="contentFrame" class="nav-link">View Customers</a>
             <a href="add_item.jsp" target="contentFrame" class="nav-link">Add Item</a>

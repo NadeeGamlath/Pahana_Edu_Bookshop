@@ -85,7 +85,33 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!-- Dashboard -->
+		<div class="accordion-item">
+		    <h2 class="accordion-header">
+		        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardHelp">
+		            <i class="bi bi-speedometer2 me-2 text-info"></i> Dashboard
+		        </button>
+		    </h2>
+		    <div id="dashboardHelp" class="accordion-collapse collapse">
+		        <div class="accordion-body">
+		            <p>The <strong>Dashboard</strong> gives you a quick overview of the system:</p>
+		            <ul>
+		                <li><strong>Total Customers:</strong> Displays the number of registered customers.</li>
+		                <li><strong>Total Items:</strong> Shows how many items are available in inventory.</li>
+		                <li><strong>Recent Bills:</strong> Quick view of billing activity.</li>
+		            </ul>
+		            <p>Below the statistics, you can access <strong>shortcuts</strong> to quickly manage:</p>
+		            <ul>
+		                <li><strong>Add/View Customers</strong></li>
+		                <li><strong>Add/View Items</strong></li>
+		                <li><strong>Billing Section</strong></li>
+		                <li><strong>Help Section</strong></li>
+		            </ul>
+		            <p>Use the dashboard as your starting point for daily tasks 🚀.</p>
+		        </div>
+		    </div>
+		</div>
             <!-- Customer Management -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
