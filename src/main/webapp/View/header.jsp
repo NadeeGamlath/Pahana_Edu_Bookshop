@@ -69,7 +69,7 @@
             <a href="view_item_wrapper.jsp" target="contentFrame" class="nav-link">View Items</a>
             <a href="billing.jsp" target="contentFrame" class="nav-link">Billing</a>
             <a href="help_section.jsp" target="contentFrame" class="nav-link">Help</a>
-            <a href="logout.jsp" target="contentFrame" class="nav-link">Logout</a>
+            <a href="<%= request.getContextPath() %>/LogoutServlet" target="_top" class="nav-link">Logout</a>
         </div>
     </div>
 
@@ -100,6 +100,11 @@
     // Update iframe and URL on sidebar link click
     links.forEach(link => {
         link.addEventListener('click', function(e) {
+            // 🚀 Skip Logout so it calls the servlet directly
+            if (this.href.includes("LogoutServlet")) {
+                return; 
+            }
+
             e.preventDefault();
             const page = this.href.split('/').pop();
             iframe.src = page;
